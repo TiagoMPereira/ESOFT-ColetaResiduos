@@ -2,10 +2,10 @@
 ---  
 
 Contribuidores:  
-Igor Caruso Miranda  
-Izaltino Romão Neto  
-Leonardo José Duarte Mendes Júnior   
-Tiago de Morais Pereira  
+- Igor Caruso Miranda  
+- Izaltino Romão Neto  
+- Leonardo José Duarte Mendes Júnior   
+- Tiago de Morais Pereira  
 
 ---
 
@@ -23,7 +23,7 @@ O sistema desenvolvido tem como finalidade gerenciar as empresas de coleta de re
 
 ### Ferramentas
 
-As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node.js, React, Knex, typescript, css, html, javascript
+As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node.js, React, Knex, typescript, css, html, javascript.
 
 <div style="display: inline_block"><br>  
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
