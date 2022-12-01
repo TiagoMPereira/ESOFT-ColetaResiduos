@@ -44,16 +44,16 @@ $ npm i
 # Rodar o comando no server
 $ npm install ts-node-dev@latest ts-node@latest
 
-# Rodar no server o banco
+# Rodar no server o banco (cd server)
 $ npm run knex:migrate
 
-# Rodar no server o banco
+# Rodar no server o banco (cd server)
 $ npm run knex:seed
           
-# Rodar no server
+# Rodar no server (cd server)
 $ npm run dev
 
-# Rodar no web
+# Rodar no web (cd web)
 $ npm run start
 ```
           
