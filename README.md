@@ -1,7 +1,7 @@
 # Trabalho Prático - C214
 ---  
 
-Contribuidores:  
+:busts_in_silhouette: Contribuidores:  
 - Igor Caruso Miranda  
 - Izaltino Romão Neto  
 - Leonardo José Duarte Mendes Júnior   
@@ -34,7 +34,7 @@ As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 
 ### :gear: Comandos para rodar
-'''bash
+```bash
 # Clonar repositório
 $ git clone https://github.com/TiagoMPereira/trabalho_praticoC214.git
           
@@ -55,6 +55,6 @@ $ npm run dev
 
 # Rodar no web
 $ npm run start
-'''
+```
           
 </div>
