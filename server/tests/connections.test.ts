@@ -1,6 +1,5 @@
 import "jest"
 
-import ItemsController from "../src/controller/ItemsController";
 import seed from "../src/database/seeds/create_items";
 import upPoints from "../src/database/migrations/00_create_points";
 import upItems from "../src/database/migrations/01_create_items";
@@ -10,9 +9,16 @@ import path from 'path'
 
 describe('Fail on connect on create items', () => {
   test('Invalid argument', async() => {
-    const data = {"Connection":"false"}
+    const data = {"Connection":"skipped"}
+    const connection = knex({
+      client: 'sqlite3',
+      connection:{
+          filename: path.resolve(__dirname, 'database.sqlite')
+      },
+      useNullAsDefault: true
+  })
 
-    const result = await seed(".", true);
+    const result = await seed(connection, true);
 
     expect(result).toEqual( { ...data } );
   });
@@ -20,7 +26,7 @@ describe('Fail on connect on create items', () => {
 
 describe('Fail on connect on create points', () => {
   test('Invalid argument', async() => {
-    const data = {"Connection":"false"}
+    const data = {"Connection":"skipped"}
     const connection = knex({
       client: 'sqlite3',
       connection:{
@@ -37,7 +43,7 @@ describe('Fail on connect on create points', () => {
 
 describe('Fail on connect on create items on connection', () => {
   test('Invalid argument', async() => {
-    const data = {"Connection":"false"}
+    const data = {"Connection":"skipped"}
     const connection = knex({
       client: 'sqlite3',
       connection:{
@@ -54,7 +60,7 @@ describe('Fail on connect on create items on connection', () => {
 
 describe('Fail on connect on create point items', () => {
   test('Invalid argument', async() => {
-    const data = {"Connection":"false"}
+    const data = {"Connection":"skipped"}
     const connection = knex({
       client: 'sqlite3',
       connection:{

@@ -1,8 +1,8 @@
 import {Knex} from 'knex';
 
-export async function up(knex: Knex, try_connection=false) {
-  if (try_connection){
-    return {"Connection":"false"}
+export async function up(knex: Knex, skip_connection=false) {
+  if (skip_connection){
+    return {"Connection":"skipped"}
   }
   return knex.schema.createTable('items', table => {
     table.increments('id').primary();

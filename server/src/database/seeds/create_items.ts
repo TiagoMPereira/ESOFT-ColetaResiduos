@@ -1,8 +1,8 @@
-import {Knex} from 'knex'
+import knex, {Knex} from 'knex'
 
-export async function seed(knex: any, try_connection=false){
-    if (try_connection){
-        return {"Connection":"false"}
+export async function seed(knex: Knex, skip_connection=false){
+    if (skip_connection){
+        return {"Connection":"skipped"}
     }
     await knex('items').insert([
         {title: 'Lâmpadas', image: 'lampadas.svg'},
@@ -12,6 +12,7 @@ export async function seed(knex: any, try_connection=false){
         {title: 'Resíduos Orgânicos', image: 'organicos.svg'},
         {title: 'Óleo de Cozinha', image: 'oleo.svg'},
     ]);
+    return {"Status": "Successfully inserted"}
 }
 
 export default seed;
