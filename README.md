@@ -9,7 +9,7 @@ Contribuidores:
 
 ---
 
-### Descrição:
+### :page_facing_up: Descrição:
 
 Projeto desenvolvido para a disciplina de Engenharia de Software  
 
@@ -21,7 +21,7 @@ O sistema desenvolvido tem como finalidade gerenciar as empresas de coleta de re
 - Resíduos orgânicos;  
 - Óleo de cozinha.  
 
-### Ferramentas
+### :hammer_and_wrench: Ferramentas
 
 As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node.js, React, Knex, typescript, css, html, javascript.
 
@@ -32,5 +32,16 @@ As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+
+### :gear: Comandos para rodar
+
+- Clonar
+
+rodar o $npm i na pasta web e server
+rodar o comando no server: $npm install ts-node-dev@latest ts-node@latest
+rodar no server o banco: $npm run knex:migrate
+rodar no server o banco: $npm run knex:seed
+rodar no server: $npm run dev
+rodar no web: $npm run start
           
 </div>
