@@ -34,14 +34,27 @@ As ferramentas que serão utilizadas para o desenvolvimento do sistema são Node
 <img align="center" alt="Node" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 
 ### :gear: Comandos para rodar
+'''bash
+# Clonar repositório
+$ git clone https://github.com/TiagoMPereira/trabalho_praticoC214.git
+          
+# Rodar na pasta web e server
+$ npm i 
 
-- Clonar
+# Rodar o comando no server
+$ npm install ts-node-dev@latest ts-node@latest
 
-rodar o $npm i na pasta web e server
-rodar o comando no server: $npm install ts-node-dev@latest ts-node@latest
-rodar no server o banco: $npm run knex:migrate
-rodar no server o banco: $npm run knex:seed
-rodar no server: $npm run dev
-rodar no web: $npm run start
+# Rodar no server o banco
+$ npm run knex:migrate
+
+# Rodar no server o banco
+$ npm run knex:seed
+          
+# Rodar no server
+$ npm run dev
+
+# Rodar no web
+$ npm run start
+'''
           
 </div>
