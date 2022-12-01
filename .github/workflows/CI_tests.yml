@@ -24,4 +24,4 @@ jobs:
     - run: |
         cd server
         npm i
-    - run: npm test
+        npm test
